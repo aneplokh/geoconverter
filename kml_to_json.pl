@@ -1,5 +1,10 @@
 #!/usr/bin/perl
-#use strict; 
+
+#USAGE: ./kml_to_json.pl <kml filename>
+# if things that look like lines are found, outputs as json format for drawtools
+# it things that look like points are found, outputs as intel link
+# eventually plan to add iitc bookmark output for points and stock intel output for lines
+
 use Data::Dumper;
 use XML::Simple;
 use JSON::PP;
